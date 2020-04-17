@@ -1,8 +1,6 @@
 language: python
 python:
   - "3.7"
-virtualenv:
-  system_site_packages: true
 script:
  - python -m unittest discover
  - python -m unittest mars_rover_tests/mars_rover_tests.py 
