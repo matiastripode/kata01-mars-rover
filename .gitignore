@@ -1,0 +1,10 @@
+.DS_Store
+
+## Virtualenv folder
+# build/
+env/
+__pycache__
+
+## VS Code configs
+.vscode/
+
