@@ -5,7 +5,10 @@ virtualenv:
   system_site_packages: true
 script:
  - python -m unittest discover
-
- notifications:
+ - python -m unittest mars_rover_tests/mars_rover_tests.py 
+install:      
+      - pip install coverage
+after_success: coverage report
+notifications:
   email: 
     - matiastripode@gmail.com
