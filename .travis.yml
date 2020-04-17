@@ -1,10 +1,12 @@
 language: python
 python:
   - "3.7"
+install:      
+  - pip install coverage
+  - pip install parameterize
+before_script:
+- export PYTHONPATH=$PYTHONPATH:$(pwd)
 script:
  - python -m unittest discover
  - python -m unittest mars_rover_tests/mars_rover_tests.py 
-install:      
-      - pip install coverage
-      - pip install parameterize
 after_success: coverage report
