@@ -36,10 +36,12 @@
             (Compass.W, MoveCommand.BACKWARD): self._current_position.x < 10
         }[(self.direction, move_command)]
 ```
-usage:
+Usage:
 ```python
     if self.check_boundaries(move_command):
 ```
+*How it works*
+
 It could be hard to understand how it works for those non-pythonist (like myself). I will try to explain it below. 
 For sake of simplicity I will focused only in one case:
 
@@ -60,6 +62,7 @@ Pythonic way:
             }
 ```
 
+
 4. **Music** to help you out staying in the `zone` [x-team radio](https://radio.x-team.com/)
 
 
@@ -73,5 +76,5 @@ Pythonic way:
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
 
 ## Acknowledgments
-* Jason Gorman for his great content in youtube [Codemanship](https://www.youtube.com/channel/UCH6iK78WQAwlK1g-z_dYxHA)
-* Hernan Wilkinson for inspiring me to learn TDD  [10pines](https://university.10pines.com/webinars_and_videos) 
+* [Jason Gorman](https://www.linkedin.com/in/jasongorman/) for his great content in youtube [Codemanship](https://www.youtube.com/channel/UCH6iK78WQAwlK1g-z_dYxHA)
+* [Hernan Wilkinson](https://www.linkedin.com/in/hernanwilkinson/) for inspiring me to learn TDD  [10pines](https://university.10pines.com/webinars_and_videos) 
